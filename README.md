@@ -1,5 +1,10 @@
 # 🔮 Predictor de Tendencia de Activos (Acciones / Criptomonedas)
 
+[![.NET](https://img.shields.io/badge/.NET-8.0|9.0-512BD4?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
+[![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-MVC-512BD4?style=flat-square)](https://docs.microsoft.com/aspnet/core)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-CSS%20Framework-7952B3?style=flat-square&logo=bootstrap)](https://getbootstrap.com/)
+[![C#](https://img.shields.io/badge/C%23-Programming%20Language-239120?style=flat-square&logo=c-sharp)](https://docs.microsoft.com/dotnet/csharp/)
+
 Sistema desarrollado en ASP.NET Core MVC para predecir la tendencia futura de un activo financiero (acción o criptomoneda) a partir de datos históricos. La aplicación permite al usuario elegir entre diferentes modos de predicción para analizar los valores ingresados y determinar si el comportamiento del activo será alcista o bajista.
 
 ---
@@ -52,4 +57,6 @@ Pantalla con un formulario que permite seleccionar el **modo de predicción** a 
 - ✔️ Uso de `ViewModels` con validaciones
 - ✔️ Uso de `DTOs` para transferencia de datos entre servicios
 - ✔️ Interfaz visual clara usando Bootstrap (o framework CSS equivalente)
-
+  
+---
+Desarrollado con ❤️ para simplificar el análisis financiero y hacer accesibles las herramientas de predicción de mercados
