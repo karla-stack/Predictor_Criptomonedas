@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predictor_Criptomonedas", "Predictor_Criptomonedas\Predictor_Criptomonedas.csproj", "{77442008-8691-4F56-B01A-2BC373D6548E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{8F3E8EE8-7409-48C0-9AE9-BF974B53F51F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77442008-8691-4F56-B01A-2BC373D6548E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77442008-8691-4F56-B01A-2BC373D6548E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77442008-8691-4F56-B01A-2BC373D6548E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77442008-8691-4F56-B01A-2BC373D6548E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3E8EE8-7409-48C0-9AE9-BF974B53F51F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3E8EE8-7409-48C0-9AE9-BF974B53F51F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3E8EE8-7409-48C0-9AE9-BF974B53F51F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3E8EE8-7409-48C0-9AE9-BF974B53F51F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {917BA2EA-C5FC-4564-9E0A-55AA80CE3AD7}
+	EndGlobalSection
+EndGlobal

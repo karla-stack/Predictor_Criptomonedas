@@ -1,0 +1,44 @@
+﻿@model DatosViewModel
+@{
+    ViewData["Title"] = "Predictor";
+}
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<h3>Registro del valor del activo</h3>
+<h4>Organizado desde el más reciente al más antiguo</h4>
+<form asp-controller="Home" asp-action="Index" method="post">
+    <div class="grid-container">
+        @for (int i = 0; i < Model.Datos.Count; i++)
+        {
+            <div class="grid-item">
+                <input asp-for="Datos[i].fecha" class="form-control" type="date" />
+                <span asp-validation-for="Datos[i].fecha"></span>
+            </div>
+            <div class="grid-item">
+                <input asp-for="Datos[i].valor" class="form-control" placeholder="Valor" />
+                <span asp-validation-for="Datos[i].valor"></span>
+            </div>
+        }
+    </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-outline-primary" id="submit">Calcular Predicción</button>
+    </div>
+</form>
+
+@if (Model.ResultadosLista != null && Model.ResultadosLista.Any())
+{
+    <div class="resultado-container">
+        <h5>Resultados de la predicción:</h5>
+        <ul class="list-group mt-3">
+            @foreach (var item in Model.ResultadosLista)
+            {
+                <li class="list-group-item">@item</li>
+            }
+        </ul>
+    </div>
+}
+
+

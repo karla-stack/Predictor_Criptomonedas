@@ -1,0 +1,41 @@
+﻿@model DatosViewModel
+
+@{
+    ViewData["Title"] = "Modos";
+}
+<h3>@ViewData["Title"]</h3>
+
+<h4>Seleccionar el modo de predicción</h4>
+
+<form method="post" asp-controller="Home" asp-action="GuardarModo">
+    <div class="list-group mb-3">
+        <div class="form-check mb-2">
+            <input asp-for="Modo" value="MediaMovilSimple" class="form-check-input" type="radio" id="radio1"
+                   checked="@(Model.Modo == "MediaMovilSimple")" />
+            <label class="form-check-label" for="radio1">
+                Media Móvil Simple (SMA) Crossover
+            </label>
+        </div>
+
+        <div class="form-check mb-2">
+            <input asp-for="Modo" value="RegresionLineal" class="form-check-input" type="radio" id="radio2"
+                   checked="@(Model.Modo == "RegresionLineal")" />
+            <label class="form-check-label" for="radio2">
+                Modo de predicción Regresión Lineal
+            </label>
+        </div>
+
+        <div class="form-check mb-2">
+            <input asp-for="Modo" value="ROC" class="form-check-input" type="radio" id="radio3"
+                   checked="@(Model.Modo == "ROC")" />
+            <label class="form-check-label" for="radio3">
+                Modo de predicción Momentum (ROC)
+            </label>
+        </div>
+
+        <div class="form-actions-modos mt-3">
+            <button type="submit" class="btn btn-primary">Guardar modo</button>
+        </div>
+    </div>
+</form>
+
