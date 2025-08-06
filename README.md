@@ -39,12 +39,7 @@ Pantalla con un formulario que permite seleccionar el **modo de predicción** a 
 - Fórmula: `ROC = ((Vt / Vt-n) - 1) * 100`
 - Se fija `n = 5`
 - Calcula la velocidad de cambio cada 5 días.
-- Muestra la evolución del ROC en una tabla:
-  - Ejemplo:  
-    ```
-    t=5, Precio=110, ROC(5)=10%  
-    t=6, Precio=115, ROC(5)=12.75%
-    ```
+- Muestra la evolución del ROC en una tabla
 
 ---
 
